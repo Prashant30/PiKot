@@ -10,7 +10,7 @@ Jinja2==2.11.2
 joblib==0.15.1
 JPype1==0.7.3
 MarkupSafe==1.1.1
-nltk==3.5
+nltk==3.4.5
 numpy==1.18.4
 pycosat==0.6.3
 pycparser==2.19
