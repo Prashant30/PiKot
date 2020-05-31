@@ -74,11 +74,10 @@ def home():
 	return render_template('test.html', greet = "My name is Mr. PiKot. I will answer your queries about harry potter. If you want to exit, type Bye!")
 
 def Pikot(user_input):
-	#print("PiKot: My name is Mr. PiKot. I will answer your queries about harry potter. If you want to exit, type Bye!")
-	#user_input = input()
+
 	user_input=user_input.lower()
 	if(user_input!='bye'):
-		if(user_input=='thanks' or user_input=='thank you' ):
+		if(user_input=='thanks' or user_input=='thank you'):
 			flag=False
 			data = "PiKot: You are welcome.."
 		else:
@@ -90,7 +89,6 @@ def Pikot(user_input):
 	else:
 		flag=False
 		data = "PiKot: Good Bye! Talk to you soon."
-		#print("PiKot: Good Bye! Talk to you soon.")
 	return data				
 
 @app.route("/answer", methods=['POST'])
